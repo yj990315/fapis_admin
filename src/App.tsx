@@ -1,9 +1,16 @@
 import './App.css';
-import { Board } from './indicator-view/Board';
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import {Board} from './pages/IndicatorBoard/Board';
+import {Login} from './pages/Login/Login';
 
 function App() {
   return (
-    <Board/>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Login/>}/>
+        <Route path='/indicators' element={<Board/>}/>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
