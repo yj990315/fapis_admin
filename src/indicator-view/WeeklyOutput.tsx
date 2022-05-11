@@ -32,7 +32,7 @@ const WeeklyOutput: React.FC<weeklyConversionProps> = ({ weeklyConversionInfo })
                 !conversionInfoElement ?
                   <>로딩중</>
                   :
-                  <tr key={conversionInfoElement.start_date.toDateString()}>
+                  <tr key={conversionInfoElement.start_date.toString()}>
                     <>
                       <td>
                         <>
