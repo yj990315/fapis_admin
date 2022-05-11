@@ -26,7 +26,7 @@ export function Board() {
   const [customPeriodConversionInfo, setCustomPeriodConversionInfo] = useState<CustomPeriodConversionInfoType>()
   const [year, setYear] = useState<number>(new Date().getFullYear())
   const [month, setMonth] = useState<number>(new Date().getMonth())
-  const [weeklyConversionInfo, setWeeklyConversionInfo] = useState<weeklyConversionElement[]>()
+  const [weeklyConversionInfo, setWeeklyConversionInfo] = useState<weeklyConversionElement[]|undefined>()
 
   const TestButton = styled.button`
     padding: 0.375rem 0.75rem;

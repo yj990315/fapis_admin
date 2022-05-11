@@ -1,8 +1,6 @@
 import moment from 'moment';
 import axios from 'axios';
 
-
-
 export const getIndicatorsStartToEndDate = (startingDate: Date, endingDate: Date) => {
   const startDate = moment(startingDate).format('YYYY-MM-DD')
   const endDate = moment(endingDate).format('YYYY-MM-DD')
